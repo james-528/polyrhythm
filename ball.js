@@ -19,9 +19,7 @@ class Ball {
       if (res.round != this.round) {
          playSound(this.soundFrequency);
          this.round = res.round;
-      } else {
-         playSound(res.soundFrequency);
-      }
+      } 
    }
 
    draw(ctx) {
