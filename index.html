@@ -4,26 +4,26 @@
       <title>Polyrhythm</title>
    </head>
    <body>
-      <canvas id="myCanvas" style="background-color:black;"></canvas>
+      <canvas id="myCanvas" style="background-image:-o-linear-gradient(red, orange, yellow, green, blue, indigo, purple, violet );"></canvas>
       <script src="sound.js"></script>
       <script src="track.js"></script>
       <script src="ball.js"></script>
       <script>
-         const size = 700;
+         const size = 600;
          myCanvas.width = size;
-         myCanvas.height = size / 2;
+         myCanvas.height = size;
 
          const trackCenter = { x: size / 2, y: size / 2 };
          const trackMinRadius = 50;
          const trackStep = 15;
          const ballRadius = 6;
-         const ballMinSpeed = 0.01;
-         const ballSpeedStep = -0.0001;
+         const ballMinSpeed = 0.001;
+         const ballSpeedStep = -0.001;
 
          const soundFrequencies = [
-            1760, 1567.98, 1396.91, 1318.51, 1174.66, 1046.5, 987.77, 880,
+            261.63, 1567.98, 1396.91, 1318.51, 1174.66, 1046.5, 987.77, 880,
             783.99, 698.46, 659.25, 587.33, 523.25, 493.88, 440, 392, 349.23,
-            329.63, 293.66, 261.63
+            329.63, 293.66, 1760
          ];
 
          const tracks = [];
