@@ -30,6 +30,6 @@ class Ball {
       const lightness = 100 - 50 * this.progress;
       ctx.fillStyle = `hsl(${this.hue}, 100%, ${lightness}%)`;
       ctx.fill();
-      ctx.stroke();a
+      ctx.stroke();
    }
 }
